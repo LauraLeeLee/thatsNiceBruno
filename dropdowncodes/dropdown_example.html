@@ -1,0 +1,115 @@
+<!DOC html>
+<html>
+    <head>
+        <title></title>
+        
+        <style>
+            /*giving a background-color to the nav container*/
+            nav {
+                margin:100px 0;
+                background-color:#e64a19;
+            }
+            /*since we'll have the 'ul li' 'float:left'
+            *we need to add a clear after the container*/
+            nav:after {
+                content:"";
+                display:table;
+                clear:both;
+            }
+            /*removing padding, margin and 'list-style' 
+            from the'ul, and adding 'position:erlative'*/
+            nav ul{
+                padding:0;
+                margin:0;
+                list-style:none;
+                position:relative;
+                
+                }
+            /*positioning the navigation items inline*/
+            nav ul li {
+                margin:0px; /*margin around each li*/
+                display:inline-block;
+                float:left;
+                background-color:#e64a19;
+                
+                }
+                /*styling the links a */
+            nav a {
+                display:block;
+                padding:0 10px;
+                color:#fff;
+                font-size:20px;
+                line-height:60px;
+                text-decoration:none;
+            }    
+           /*background color change on hover*/
+           nav a:hover {
+               background-color:#000000;
+           }
+           /*hide dropdowns by default and give it a
+           position of absoulute*/
+           nav ul ul {
+               display:none;
+               position:absolute;
+              
+           }
+           /*display dropdowns on hover*/
+           nav ul li:hover > ul  {
+               display:inherit;
+           }
+           /*first tier dropdown*/
+           nav ul ul li {
+               min-width:170px;
+               float:none;
+               display:list-item;
+               position:relative;    
+           }
+           /* second, their and more tiers, we move
+           the 2nd and 3rd etc teir dropdowns to the left
+           by the amount of the width of the first tier*/
+           nav ul ul ul {
+               position:absolute;
+               top:0;
+               left:100%;
+           }
+           /*change '+'in order to change the dropdown
+           symbol*/
+           li > a:after {content: '+';           }
+           li > a:only-child:after {content:'';} /*this checks if the the 
+           parent element has any other elements inside other 
+           than <li> tags. if not, then it removes the
+           plus ( + ), which is added by default.*/
+                
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">WordPress</a>
+                    <!--first tier drop down-->
+                    <ul>
+                        <li><a href="#">Themes</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Tutorials</a>
+                        <!--2nd tier dropdown -->
+                            <ul>
+                                <li><a href="#">Stuff</a></li>
+                                <li><a href="#">Things</a></li>
+                                <li><a href="#">Other Stuff</a></li>
+                            </ul>
+                            <!-- 2nd tier dropdown ends -->
+                        </li>
+                    </ul> 
+                    <!-- first tier dropdown ends -->
+                </li>
+                <li><a hiref="#">Graphic Design</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Contact</a></li>    
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+    </body>
+    
+</html>

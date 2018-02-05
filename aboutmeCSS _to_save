@@ -1,0 +1,63 @@
+
+		header {
+		         width:100%;
+		         padding:20px;
+             margin:30px auto 0px;
+		         background-color:#990000;
+		         border:double 8px;
+		         border-color:#006600;
+		         position: absolute;
+
+		      }
+
+		   h1{
+
+		        font-family:Palatino,serif;
+        		font-size:50px;
+        		color:#006600;
+        		text-shadow:1px 1px black;
+        		text-decoration:underline;
+        		text-align:center;
+
+        		}
+
+		   	#stemma {
+		   		position:absolute;
+		   		top:20px;
+		   		right:120px;
+
+		   	}
+
+	#bruno {
+			position:absolute;
+			top:20px;
+			left:90px;
+	}
+
+
+		#about-me {
+			width:50%;
+		  height:800px;
+      overflow:auto;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:18px;
+			color:white;
+			text-align:justify;
+			padding:15px;
+
+		  background-color:#006600;
+      /*font cream color*/
+			color:rgb(245,242,223);
+			position:absolute;
+        top:250;
+        right:30;
+		}
+
+		/*contains photos of patrica on about page*/
+    #photobox {
+        width:200px;
+
+        position:absolute;
+          top:250;
+          left:20;
+      }

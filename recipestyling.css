@@ -1,0 +1,37 @@
+body {
+	background-color: rgb(245,242,223);
+}
+
+h3 {
+	font-size: 2em;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+.recipebody {
+	color: rgb(245,242,223);
+	background-color: #800000;
+	width: 400px;
+	margin: 10px auto 20px;
+	padding: 30px;
+	border: double 10px #003300;
+	text-align: left;
+}
+
+.recipepicture {
+	width: 500px;
+	display: block;
+	margin: 20px auto 20px;
+	border: 15px double #003300;
+	position: relative;
+	top: 10px;
+
+}
+
+#ingredients {
+	list-style-type: none;
+	padding: 0;
+}

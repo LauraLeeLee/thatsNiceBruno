@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOC html>
+<html>
+	<head>
+		<title> button trial</title>
+	<style>
+	/*creates background for the drop menu*/
+        .drop_menu {
+            background:#006600;
+            padding:0;
+            margin-left:200px;
+            list-style-type:none;
+            height:50px;
+            width:250px;
+            
+        }
+        
+        .drop_menu li {float:left;} /*places headings in line*/
+        .drop_menu li a {
+            padding:9px 20px;
+            display:block;
+            color:##663300;
+            text-decoration:none;
+            font:12px arial, verdana, sans-serif;
+        }
+        /*submenu*/
+        .drop_menu ul {
+            position: absolute;
+            left:-9999px;
+            top:-9999px;
+            list-style-type:none;
+        }
+        .drop_menu li:hover {
+            position:relative;
+            background:#ffffff;
+        }
+        .drop_menu li:hover ul {
+            left:0px;
+            top:30px;
+            background:#ffffff;
+            padding:0px;
+        }
+        .drop_menu li:hover ul li a {
+            padding:5px;
+            display:block;
+            width:168px;
+            text-indent:15px;
+            background-color:#ffffff;
+        }
+        .drop_menu li:hover ul li a:hover {background:#800000;}
+        
+        .sub_drop {
+            position:absolute;
+            visibility:hidden;
+        }
+        .sub_drop: hover {
+            padding:5px;
+            display:block;
+            width:168px;
+            text-indent:15px;
+            background-color:#ffffff;
+        }
+	</style>		
+		
+	</head>	
+
+<body>
+
+<div class= "drop">
+    <ul class="drop_menu">
+        <li><a href= '#'> Link 1</a>
+          <ul>
+            <li><a href='#'> Sub Link 1</a></li>
+            <li><a href= '#'>Sub Link 2</a></li>
+         </ul>
+        </li>
+        <li><a href='#'>Recipes</a>
+            <ul>
+                 <li><a href='#'>Beef</a></li>
+                     <ul>
+                         <li class="sub_drop"><a href= "bisteccapizzaiola.html">Bistecca Pizzaiola</a></li>
+                     </ul>
+                 <li><a href='#'>Chicken</a></li>
+                 <li><a href='#'>Seafood</a></li>
+                 <li><a href='#'>Pasta</a></li>
+                 <li><a href='#'>Pizza</a></li>
+                 <li><a href='#'>Salad</a></li>
+                 <li><a href="desserts.html">Desserts</a></li>
+                     
+            </ul>
+        </li>
+        <li><a href='#'>Link 3</a>
+             <ul>
+                <li><a href='#'>Sub Link 1</a></li>
+                <li><a href='#'>Sub Link 2</a></li>
+                <li><a href='#'>Sub Link 3</a></li>
+                <li><a href='#'>Sub Link 4</a></li>
+            </ul>    
+        </li>
+</div>
+</body>
+</html>

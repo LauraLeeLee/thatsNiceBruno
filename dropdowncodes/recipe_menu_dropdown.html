@@ -1,0 +1,95 @@
+<!DOC html>
+<html>
+    <head>
+        <title></title>
+        
+        <style>
+            /*give background color to the nav container*/
+            nav {margin: 100px 0;
+            background-color: #006600;
+            width:300px;
+            height:50px;
+           
+            }
+            /*ul li will float:left, add a clear after
+            the container*/
+            nav:after {
+                content:"";
+                display:table;
+                clear:both;
+            }
+            /*remove padding, margin, list-style
+            from the ul. Add position:relative*/
+            nav ul {
+                padding:0;
+                margin:0;
+                list-style:none;
+                position:relative;
+                
+            }
+            /*position the navigation items inline */
+            nav ul li {
+                margin:0px;
+                display:inline-block;
+                float:left;
+                background-color:#006600;
+            }
+            /*styling the links*/
+            nav a {
+                display:block;
+                padding:0 110px;
+                color:#ffffff;
+                font-family:"Avant Garde", sans-serif;
+                font-size:24px;
+                line-height:50px;
+                text-decoration:none;
+            }
+            /*background color change on hover*/
+            nav a:hover {
+                background-color:#990000;
+            }
+            
+            /*hide dropdowns by default, give position
+            of absolute*/
+            nav ul ul {
+                display:none;
+                position:absolute;
+                
+            }
+
+            /*display dropdowns on hover*/
+            nav ul li:hover >ul {
+                display:inherit;
+            }
+            /* first tier dropdown */
+            nav ul ul li {
+                min-width:307px;
+                float:none;
+                display:list-item;
+                position:relative;
+            }
+            /*styling dropdown links*/
+            nav ul li ul li a {
+                    font-size:18px;
+                    padding-right:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Recipes</a>
+                     <ul>
+                         <li><a href="beefpage.html">Beef</a></li>
+                         <li><a href="#">Chicken</a></li>
+                         <li><a href="#">Pasta and Sauces</a></li>
+                         <li><a href="#">Seafood</a></li>
+                         <li><a href="desserts.html">Desserts</a></li>
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </body>
+    
+</html>

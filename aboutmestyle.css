@@ -1,0 +1,112 @@
+header {
+/*box-sizing property specifies that padding and border are included in the total width and height of the border*/
+  box-sizing: border-box;
+  width: 99%;
+  padding: 50px;
+  margin: -40px auto 0;
+  background-color: #990000;
+  border:double 8px;
+  border-color: #006600;
+  font-family: Cambria, serif;
+  font-size: 60px;
+  color: #006600;
+  text-shadow: 1px 1px black;
+  text-decoration: underline;
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+
+#stemma {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+}
+
+#bruno {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+}
+
+#about-me {
+  width: 40%;
+  height: 848px;
+  overflow: auto;
+  font-family: "optima", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+  background-color: #006600;
+  /*font cream color*/
+  color: rgb(245,242,223);
+  padding: 20px;
+  display: inline-block;
+  margin-top: 79px;
+  margin-right: 85px;
+  margin-bottom: 30px;
+}
+
+#about-me p::first-letter{
+  font: italic 30px script;
+  color: #cc0000;
+  text-shadow: 1px 1px black;
+  }
+
+/*contains photos of patrica on about page*/
+#photobox {
+  width: 200px;
+  padding: 20;
+  float: left;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 175px;
+  margin-bottom: 30px;
+}
+/*table to hold smaller photos*/
+table.gallery {
+  border: 0px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+tr, td {
+  margin: 0;
+  padding: 0;
+}
+
+/*style for each table cell*/
+table.gallery td {
+  position: relative;
+  padding: 0px;
+  border-width: 0px;
+}
+
+
+/*style small images in gallery*/
+table.gallery img.small {
+  width: 300px;
+}
+
+
+table.gallery img.left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  visibility: hidden;
+}
+
+table.gallery img.Lbottom {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: 10;
+  visibility: hidden;
+}
+
+table.gallery td:hover img.left,
+table.gallery td:hover img.Lbottom {
+  visibility: visible;
+  width: 750px;
+}
